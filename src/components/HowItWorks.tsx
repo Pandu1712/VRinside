@@ -72,7 +72,7 @@ export default function HowItWorks(): JSX.Element {
               <div className="flex items-start space-x-6">
                 {/* Number badge */}
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-lg">
+                  <div className="w-12 h-12 rounded-full bg-[#362C59] text-white flex items-center justify-center font-bold text-lg">
                     {step.id}
                   </div>
                 </div>
