@@ -57,7 +57,7 @@ const services: Service[] = [
     description:
       "Create relaxing and luxurious environments for your clients with calming color palettes, efficient layouts, and premium finishes.",
     image:
-      "https://images.pexels.com/photos/3997994/pexels-photo-3997994.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://i.pinimg.com/originals/a8/98/04/a898049e8af3fa134d37876e26003236.jpg",
     gallery: [
       "https://images.pexels.com/photos/3997994/pexels-photo-3997994.jpeg",
       "https://images.pexels.com/photos/8534272/pexels-photo-8534272.jpeg",
