@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GetStarted from './components/GetStarted';
 import HowItWorks from './components/HowItWorks';
+import AboutUs from './components/Aboutus';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Services />
       <Portfolio />
+      <AboutUs/>
       <Testimonials />
       <HowItWorks/>
       <Contact />
