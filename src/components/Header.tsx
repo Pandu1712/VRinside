@@ -51,12 +51,7 @@ export default function Header() {
           >
             How It Works
           </a>
-          <a
-            href="contact"
-            className="text-gray-700 hover:text-[#362C59] transition-colors"
-          >
-           Contact
-          </a>
+          
          
         </div>
 
@@ -118,15 +113,7 @@ export default function Header() {
             >
               How It Works
             </a>
-           <a
-              href="#contact"
-             className="text-gray-700 hover:text-[#362C59] transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </a>
            
-
 
             {/* Mobile CTA Button */}
             <button className="bg-[#433673] text-white px-6 py-2 rounded-lg hover:bg-[#362C59] transition-colors">
