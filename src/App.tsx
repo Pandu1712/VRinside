@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import GetStarted from './components/GetStarted';
 import HowItWorks from './components/HowItWorks';
 import AboutUs from './components/Aboutus';
+import Partners from './components/Partners';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <AboutUs/>
       <Testimonials />
       <HowItWorks/>
+      <Partners/>
       <Contact />
       <Footer />
       <GetStarted />

@@ -46,7 +46,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+    <section id="testimonials" className="py-20 px-6 bg-linear-to-br from-gray-50 to-gray-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
