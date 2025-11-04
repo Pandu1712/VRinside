@@ -8,27 +8,27 @@ interface Partner {
 }
 
 const partners: Partner[] = [
-  { name: "Greenply", logo: "/logos/greenply.png", category: "Laminates & Plywood" },
-  { name: "CenturyPly", logo: "/logos/centuryply.png", category: "Laminates & Plywood" },
-  { name: "Merino", logo: "/logos/merino.png", category: "Laminates & Plywood" },
-  { name: "Royalé Touché", logo: "/logos/royaletouche.png", category: "Laminates & Plywood" },
-  { name: "Hettich", logo: "/logos/hettich.png", category: "Hardware" },
-  { name: "Hafele", logo: "/logos/hafele.png", category: "Hardware" },
-  { name: "Ebco", logo: "/logos/ebco.png", category: "Hardware" },
-  { name: "Godrej", logo: "/logos/godrej.png", category: "Hardware" },
-  { name: "Asian Paints", logo: "/logos/asianpaints.png", category: "Paints" },
-  { name: "Berger", logo: "/logos/berger.png", category: "Paints" },
-  { name: "Nerolac", logo: "/logos/nerolac.png", category: "Paints" },
-  { name: "Birla Opus", logo: "/logos/birlaopus.png", category: "Paints" },
-  { name: "Jaquar", logo: "/logos/jaquar.png", category: "Lighting & Electrical" },
-  { name: "Wipro", logo: "/logos/wipro.png", category: "Lighting & Electrical" },
-  { name: "Havells", logo: "/logos/havells.png", category: "Lighting & Electrical" },
-  { name: "Philips", logo: "/logos/philips.png", category: "Lighting & Electrical" },
-  { name: "Polycab", logo: "/logos/polycab.png", category: "Lighting & Electrical" },
-  { name: "KalingaStone", logo: "/logos/kalingastone.png", category: "Countertops" },
-  { name: "Caesarstone", logo: "/logos/caesarstone.png", category: "Countertops" },
-  { name: "Relaystone", logo: "/logos/relaystone.png", category: "Countertops" },
-  { name: "Hafele Surfaces", logo: "/logos/hafelesurfaces.png", category: "Countertops" },
+  { name: "Greenply", logo: "https://companieslogo.com/img/orig/GREENPLY.NS_BIG-b6a4a002.png?t=1604670420", category: "Laminates & Plywood" },
+  { name: "CenturyPly", logo: "https://companieslogo.com/img/orig/CENTURYPLY.NS_BIG-33e1b422.png?t=1604067031", category: "Laminates & Plywood" },
+  { name: "Merino", logo: "https://vtlogo.com/wp-content/uploads/2021/10/merino-laminates-ltd-vector-logo.png", category: "Laminates & Plywood" },
+  { name: "Royalé Touché", logo: "https://i2.wp.com/matlab.com.lb/wp-content/uploads/2018/01/royale_touche_logo_mobile.png?ssl=1", category: "Laminates & Plywood" },
+  { name: "Hettich", logo: "https://w7.pngwing.com/pngs/923/701/png-transparent-hettich-international-hd-logo.png", category: "Hardware" },
+  { name: "Hafele", logo: "https://www.pngfind.com/pngs/m/419-4191719_hafele-logo-png-transparent-svg-vector-hafele-png.png", category: "Hardware" },
+  { name: "Ebco", logo: "https://interior-world.in/img/ebco_with_taglinebg.png", category: "Hardware" },
+  { name: "Godrej", logo: "https://www.pinpng.com/pngs/m/428-4285088_godrej-group-godrej-logo-png-transparent-png.png", category: "Hardware" },
+  { name: "Asian Paints", logo: "https://www.kindpng.com/picc/m/9-91067_asian-paints-logo-png-asian-paints-transparent-png.png", category: "Paints" },
+  { name: "Berger", logo: "https://companieslogo.com/img/orig/BERGEPAINT.NS-7a7201df.png?t=1601653024&download=true", category: "Paints" },
+  { name: "Nerolac", logo: "https://companieslogo.com/img/orig/KANSAINER.NS_BIG-4ad69786.png?t=1611280024", category: "Paints" },
+  { name: "Birla Opus", logo: "https://images.seeklogo.com/logo-png/54/1/birla-opus-paints-logo-png_seeklogo-541342.png", category: "Paints" },
+  { name: "Jaquar", logo: "https://tse2.mm.bing.net/th/id/OIP.wgYku9fsiVX1RXXrliO4CgHaCh?pid=Api&P=0&h=180", category: "Lighting & Electrical" },
+  { name: "Wipro", logo: "https://www.financialexpress.com/wp-content/uploads/2017/05/wipro.jpg?w=1024", category: "Lighting & Electrical" },
+  { name: "Havells", logo: "https://e7.pngegg.com/pngimages/680/167/png-clipart-havells-logo-havell-s-electrical-shop-havells-logo-company-krrish-text-carnivoran.png", category: "Lighting & Electrical" },
+  { name: "Philips", logo: "https://w7.pngwing.com/pngs/359/652/png-transparent-philips-lighting-philips-lighting-philips-hue-light-light-fixture-blue-text.png", category: "Lighting & Electrical" },
+  { name: "Polycab", logo: "https://tse1.mm.bing.net/th/id/OIP.BZtIx6kac5onlX9UJkIzcgAAAA?pid=Api&P=0&h=180", category: "Lighting & Electrical" },
+  { name: "KalingaStone", logo: "https://www.themarbleworkshop.co.uk/wp-content/uploads/2018/07/kalinga-stone-logo.jpg", category: "Countertops" },
+  { name: "Caesarstone", logo: "https://www.liblogo.com/img-logo/ca6209c459-caesarstone-logo-caesarstone-cabinets-direct-usa.png", category: "Countertops" },
+  { name: "Relaystone", logo: "https://static.wixstatic.com/media/d0f9cf_24a00409569f46faa591ddb4e2cee92f~mv2.png/v1/fill/w_525,h_523,al_c,q_85,enc_avif,quality_auto/d0f9cf_24a00409569f46faa591ddb4e2cee92f~mv2.png", category: "Countertops" },
+  { name: "Hafele Surfaces", logo: "https://vectorseek.com/wp-content/uploads/2023/09/Hafele-Logo-Vector.svg-.png", category: "Countertops" },
 ];
 
 const Partners: React.FC = () => {
@@ -96,7 +96,7 @@ const Partners: React.FC = () => {
   return (
     <section
       id="partners"
-      className="py-20 px-4 sm:px-8 bg-gradient-to-br from-gray-50 to-gray-100 relative"
+      className="py-20 px-4 sm:px-8  relative"
     >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -148,7 +148,7 @@ const Partners: React.FC = () => {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:scale-105 p-6 min-w-[180px] flex-shrink-0"
+                className="flex flex-col items-center justify-center  backdrop-blur-sm rounded-2xl  hover: transition-all duration-300 transform hover:scale-105 p-6 min-w-[180px] flex-shrink-0"
               >
                 <img
                   src={partner.logo}
