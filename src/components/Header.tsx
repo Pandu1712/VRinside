@@ -6,18 +6,40 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 py-4 h-20 flex items-center justify-between">
         {/* Logo Section */}
-        <div className="flex items-center space-x-2">
-         <img
-    src="../../logo.png"
+  <div className="flex items-center space-x-0">
+  <img
+    src="../../1.1.png"
     alt="Inizio Interiors Logo"
-    className="w-18 h-15 object-contain"
+    className="w-36 h-auto object-contain -my-2"
   />
-          <span className="text-2xl font-bold text-gray-900">
-            Inizio Interiors
-          </span>
-        </div>
+
+  <div className="flex flex-col leading-none ml-[-4px]">
+    <span
+      className="text-2xl font-semibold uppercase text-[#362C59]"
+      style={{
+        fontFamily: "'Playfair Display', serif",
+        letterSpacing: "1px",
+      }}
+    >
+      Inizio Interiors
+    </span>
+
+    <span
+      className="text-sm text-gray-600 tracking-wider"
+      style={{
+        fontFamily: "'Poppins', sans-serif",
+        fontWeight: "500",
+      }}
+    >
+      For a New Beginning
+    </span>
+  </div>
+</div>
+
+
+
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
