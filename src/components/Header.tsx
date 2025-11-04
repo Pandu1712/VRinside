@@ -8,16 +8,16 @@ export default function Header() {
     <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <nav className="max-w-7xl mx-auto px-6 py-4 h-20 flex items-center justify-between">
         {/* Logo Section */}
-  <div className="flex items-center space-x-0">
+ <div className="flex items-center space-x-0">
   <img
     src="../../1.1.png"
     alt="Inizio Interiors Logo"
-    className="w-36 h-auto object-contain -my-2"
+    className="w-28 sm:w-32 md:w-36 h-auto object-contain -my-2"
   />
 
-  <div className="flex flex-col leading-none ml-[-4px]">
+  <div className="flex flex-col leading-none ml-[-4px] whitespace-nowrap">
     <span
-      className="text-2xl font-semibold uppercase text-[#362C59]"
+      className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-[#362C59]"
       style={{
         fontFamily: "'Playfair Display', serif",
         letterSpacing: "1px",
@@ -27,7 +27,7 @@ export default function Header() {
     </span>
 
     <span
-      className="text-sm text-gray-600 tracking-wider"
+      className="text-[10px] sm:text-xs md:text-sm text-gray-600 tracking-wider"
       style={{
         fontFamily: "'Poppins', sans-serif",
         fontWeight: "500",
@@ -37,6 +37,7 @@ export default function Header() {
     </span>
   </div>
 </div>
+
 
 
 
