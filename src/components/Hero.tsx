@@ -31,7 +31,7 @@ export default function Hero() {
 
         {/* Image + Badge */}
         <div className="relative">
-          <div className="aspect-square bg-linear-to-br from-amber-100 to-amber-50 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="aspect-square bg-linear-to-br  rounded-3xl overflow-hidden shadow-2xl">
             <img
               src="https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353049/hero_tvvzzg.jpg"
               alt="Modern interior design"
