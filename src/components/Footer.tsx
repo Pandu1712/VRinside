@@ -12,10 +12,10 @@ export default function Footer() {
                <img
     src="/1.1.png"
     alt="Inizio Interiors Logo"
-    className="w-18 h-15 object-contain"
+    className="w-23 h-18 object-contain"
   />
          
-              <span  className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-[#362C59]">Inizio Interiors</span>
+              <span  className="text-lg sm:text-lg md:text-lg font-semibold uppercase text-[#362C59]">Inizio Interiors</span>
             </div>
             <p className="text-gray-700 leading-relaxed">
               Designing spaces that blend elegance, comfort, and creativity —
@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold mb-4 text-black">Quick Links</h4>
+            <h4 className="font-bold mb-4 text-[#362C59]">Quick Links</h4>
             <ul className="space-y-2 text-gray-700">
               <li>
                 <a
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-bold mb-4 text-black">Our Services</h4>
+            <h4 className="font-bold mb-4 text-[#362C59]">Our Services</h4>
             <ul className="space-y-2 text-gray-700">
               <li>Residential Interiors</li>
               <li>Commercial Design</li>
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {/* Contact & Socials */}
           <div>
-            <h4 className="font-bold mb-4 text-black">Contact Us</h4>
+            <h4 className="font-bold mb-4 text-[#362C59]">Contact Us</h4>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 text-[#433673] mt-0.5" />
