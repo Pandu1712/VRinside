@@ -37,8 +37,8 @@ export default function Contact() {
           
           {/* Left info */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Book Your Free Consultation
+            <h2 className="text-3xl md:text-5xl font-bold text-[#433673] mb-6">
+             Contact Us
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Share your project details and budget range — our team will reach out for your personalized consultation.

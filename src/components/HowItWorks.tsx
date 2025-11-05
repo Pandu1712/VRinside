@@ -51,7 +51,7 @@ export default function HowItWorks(): JSX.Element {
       <div className="max-w-7xl mx-auto mt-6">
         {/* Header */}
         <header className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#433673]">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#433673]">
             How It Works {/* <span className="text-[#433673]">Inizio Interiors</span> */}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">

@@ -6,7 +6,7 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: Content */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#362C59] mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#362C59] mb-6">
             About Us
           </h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">

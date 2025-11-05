@@ -16,13 +16,16 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="bg-[#433673] text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-all transform hover:scale-105 flex items-center space-x-2 cursor-pointer">
-              <span>Book Free Consultation</span>
-              <ChevronRight className="w-5 h-5" />
-            </button>
-            <button className="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-900 hover:text-white transition-all cursor-pointer">
+           <a href="#portfolio">
+  <button className="bg-[#433673] text-white px-8 py-3 rounded-lg hover:bg-white hover:text-[#433673] border-2 border-transparent hover:border-[#433673] transition-all transform hover:scale-105 flex items-center space-x-2 cursor-pointer">
+    <span>Explore Our Work</span>
+    <ChevronRight className="w-5 h-5" />
+  </button>
+</a>
+
+           {/*  <button className="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-900 hover:text-white transition-all cursor-pointer">
               Explore Our Work
-            </button>
+            </button> */}
           </div>
         </div>
 
