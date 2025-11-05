@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#433673] leading-tight mb-6">
             Transform Your Space Into a Dream Home
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">

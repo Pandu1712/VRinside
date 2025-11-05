@@ -130,7 +130,7 @@ export const services: Service[] = [
       'Peaceful and sacred spaces crafted with devotion. From traditional temple-style setups to modern minimalist sanctuaries, we design pooja rooms that inspire serenity.',
     category: 'Specialized',
     image:
-      'https://images.pexels.com/photos/774282/pexels-photo-774282.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202211/pooja-unit-for-home/title-pooja-unit-design.jpg',
     gallery: [
       'https://images.pexels.com/photos/161640/pexels-photo-161640.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/774282/pexels-photo-774282.jpeg?auto=compress&cs=tinysrgb&w=800',

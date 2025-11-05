@@ -58,19 +58,19 @@ export default function AboutUs() {
       </div>
 
       {/* Call to Action */}
-      <div className="max-w-4xl mx-auto mt-20 bg-[#362C59] text-white p-10 rounded-3xl shadow-xl text-center">
+      <div className="max-w-5xl mx-auto mt-20 bg-[#362C59] text-white p-10 rounded-3xl shadow-xl text-center">
         <h3 className="text-3xl font-bold mb-4">Let’s Design Your Dream Space</h3>
         <p className="text-lg mb-8 leading-relaxed text-[#F2F2F2]">
           At Inizio Interiors, we believe that your home or office should inspire you every day. 
           Whether you're renovating a single room or redesigning your entire space, we are here 
           to turn your dreams into reality.
         </p>
-        <a
+       {/*  <a
           href="#contact"
           className="inline-block bg-[#8580A6] text-[#362C59] font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-[#362C59] transition-colors"
         >
           Contact Us Today
-        </a>
+        </a> */}
       </div>
     </section>
   );

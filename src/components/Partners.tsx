@@ -99,7 +99,7 @@ const Partners: React.FC = () => {
       className="py-20 px-4 sm:px-8  relative"
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#433673] mb-6">
           Our Trusted Partners
         </h2>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">

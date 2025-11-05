@@ -9,6 +9,8 @@ import GetStarted from './components/GetStarted';
 import HowItWorks from './components/HowItWorks';
 import AboutUs from './components/Aboutus';
 import Partners from './components/Partners';
+import CalendlyPopupButton from './components/CalendlyPopupButton';
+
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <Contact />
       <Footer />
       <GetStarted />
+ <CalendlyPopupButton url="https://calendly.com/iniziointeriorshyd/30min" />
+
     </div>
   );
 }

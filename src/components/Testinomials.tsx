@@ -50,7 +50,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#433673] mb-4">
             What Our Clients Say
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

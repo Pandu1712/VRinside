@@ -36,7 +36,7 @@ export default function Portfolio() {
     <section id="portfolio" className="py-20 px-6">
       <div className="mt-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Portfolio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#433673] mb-4">Our Portfolio</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Explore our recent projects and see how we transform spaces into extraordinary environments
           </p>
