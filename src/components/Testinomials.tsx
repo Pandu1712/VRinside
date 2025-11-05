@@ -87,40 +87,42 @@ export default function Testimonials() {
             `}
           </style>
 
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.03 }}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="min-w-[320px] sm:min-w-[360px] bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300"
-            >
-              {/* Stars */}
-              <div className="flex space-x-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-amber-500 text-amber-500" />
-                ))}
-              </div>
+         {testimonials.map((testimonial, index) => (
+  <motion.div
+    key={index}
+    whileHover={{ scale: 1.03 }}
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: index * 0.1 }}
+    viewport={{ once: true }}
+    className="min-w-[320px] sm:min-w-[360px] bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between h-[340px]"
+  >
+    {/* Top content (stars + text) */}
+    <div>
+      <div className="flex space-x-1 mb-4">
+        {[...Array(5)].map((_, i) => (
+          <Star key={i} className="w-5 h-5 fill-amber-500 text-amber-500" />
+        ))}
+      </div>
 
-              {/* Text */}
-              <p className="text-gray-700 mb-6 italic leading-relaxed">
-                “{testimonial.text}”
-              </p>
+      <p className="text-gray-700 italic leading-relaxed flex-1">
+        “{testimonial.text}”
+      </p>
+    </div>
 
-              {/* Author */}
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#BDB8D9] rounded-full flex items-center justify-center text-[#433673] font-extrabold">
-                  {testimonial.initials}
-                </div>
-                <div>
-                  <p className="font-bold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+    {/* Bottom (author) */}
+    <div className="mt-6 flex items-center space-x-4">
+      <div className="w-12 h-12 bg-[#BDB8D9] rounded-full flex items-center justify-center text-[#433673] font-extrabold">
+        {testimonial.initials}
+      </div>
+      <div>
+        <p className="font-bold text-gray-900">{testimonial.name}</p>
+        <p className="text-sm text-gray-600">{testimonial.role}</p>
+      </div>
+    </div>
+  </motion.div>
+))}
+
         </div>
       </div>
     </section>
