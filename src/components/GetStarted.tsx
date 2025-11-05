@@ -1,4 +1,4 @@
-import { X, MessageCircle } from "lucide-react";
+import {  MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { PopupModal } from "react-calendly";
 
