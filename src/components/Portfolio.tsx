@@ -1,32 +1,32 @@
 const portfolioItems = [
   {
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Modern Living Room',
+    image: '../../public/p-1.jpg',
+    title: 'Modern Kitchen',
     category: 'Minimalist Design'
   },
   {
-    image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Contemporary Bedroom',
+    image: '../../public/p-2.jpg',
+    title: 'Luxurious Living Room',
     category: 'Luxury Comfort'
   },
   {
-    image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '../../public/p-3.jpg',
     title: 'Elegant Dining Room',
     category: 'Classic Style'
   },
   {
-    image: 'https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Modern Kitchen',
+    image: '../../public/p-4.jpg',
+    title: 'Modern Bedroom',
     category: 'Functional Beauty'
-  },
+  },  
   {
-    image: 'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '../../public/p-5.jpg',
     title: 'Cozy Office Space',
     category: 'Productive Environment'
   },
   {
-    image: 'https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Spa Bathroom',
+    image: '../../public/p-6.jpg',
+    title: 'Contemporary Living Area',
     category: 'Relaxation Suite'
   }
 ];

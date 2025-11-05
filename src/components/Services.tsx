@@ -34,7 +34,7 @@ export default function Services() {
     <button
       key={category}
       onClick={() => setSelectedCategory(category)}
-      className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium sm:font-semibold text-xs sm:text-sm transition-all duration-300 ${
+      className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium sm:font-semibold cursor-pointer text-xs sm:text-sm transition-all duration-300 ${
         selectedCategory === category
           ? 'bg-gray-900 text-white shadow-lg scale-105'
           : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md hover:shadow-lg'
@@ -46,10 +46,10 @@ export default function Services() {
 </div>
 
 
-            <div className="flex gap-2 bg-white rounded-full p-1 shadow-md">
+            <div className="flex gap-2 bg-white rounded-full p-1 shadow-md ">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-full transition-all ${
+                className={`p-2 rounded-full transition-all cursor-pointer ${
                   viewMode === 'grid'
                     ? 'bg-gray-900 text-white'
                     : 'text-gray-600 hover:bg-gray-100'
@@ -71,7 +71,7 @@ export default function Services() {
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-2 rounded-full transition-all ${
+                className={`p-2 rounded-full transition-all cursor-pointer ${
                   viewMode === 'list'
                     ? 'bg-gray-900 text-white'
                     : 'text-gray-600 hover:bg-gray-100'
