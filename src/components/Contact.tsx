@@ -19,6 +19,9 @@ export default function Contact() {
           console.log(result.text);
           alert("✅ Consultation request sent successfully!");
           e.currentTarget.reset();
+          if (form.current) {
+            form.current.reset();
+          }
         },
         (error) => {
           console.error(error.text);
