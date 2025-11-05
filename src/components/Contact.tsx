@@ -69,7 +69,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Visit Us</p>
-                  <p className="text-gray-600">123 Design Street, New York, NY 10001</p>
+                  <p className="text-gray-600">Flat No 1302 , Block I , Aditya Imperial Heights 
+Hafeezpet 
+Hyderabad- 500049</p>
                 </div>
               </div>
             </div>
@@ -166,6 +168,7 @@ export default function Contact() {
                   <option value="immediately">Immediately (0-15 days)</option>
                   <option value="1month">Within 1 Month</option>
                   <option value="3months">Within 3 Months</option>
+                  <option value="greater">Greater &rarr; 3 Months</option>
              
                 </select>
               </div>
