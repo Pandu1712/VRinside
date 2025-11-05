@@ -26,7 +26,7 @@ function App() {
       <Contact />
       <Footer />
       <GetStarted />
- <CalendlyPopupButton url="https://calendly.com/iniziointeriorshyd/30min" />
+
 
     </div>
   );
