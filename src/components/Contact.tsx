@@ -162,6 +162,7 @@ Hyderabad- 500049</p>
         <select
           name="user_project"
           id="project"
+            value={selectedProject}
           required
           onChange={handleProjectChange}
           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
@@ -205,7 +206,7 @@ Hyderabad- 500049</p>
                   Budget Range
                 </label>
                 <select
-                  name="user_budget"
+                  name="user_timeline"
                   id="budget"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
