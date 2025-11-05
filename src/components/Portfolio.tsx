@@ -1,31 +1,31 @@
 const portfolioItems = [
   {
-    image: '/p-1.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353329/p-1_ier4mz.jpg',
     title: 'Modern Kitchen',
     category: 'Minimalist Design'
   },
   {
-    image: '/p-2.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353324/p-2_ubaaks.jpg',
     title: 'Luxurious Living Room',
     category: 'Luxury Comfort'
   },
   {
-    image: '/p-3.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353328/p-3_uzlaph.jpg',
     title: 'Elegant Dining Room',
     category: 'Classic Style'
   },
   {
-    image: '/p-4.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353324/p-6_bixf4r.jpg',
     title: 'Modern Bedroom',
     category: 'Functional Beauty'
   },  
   {
-    image: '/p-5.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353326/p-5_ojuwmx.jpg',
     title: 'Cozy Office Space',
     category: 'Productive Environment'
   },
   {
-    image: '/p-6.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353324/p-6_bixf4r.jpg',
     title: 'Contemporary Living Area',
     category: 'Relaxation Suite'
   }
