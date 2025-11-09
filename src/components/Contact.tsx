@@ -23,30 +23,33 @@ export default function Contact() {
   };
 
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!form.current) return;
+ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  if (!form.current) return;
 
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("✅ Consultation request sent successfully!");
-        form.current?.reset(); 
-          if (form.current) {
-            form.current.reset();
-          }
-        },
-        (error) => {
-          console.error(error.text);
-          alert("❌ Failed to send request. Please try again later.");
-        }
-      );
-  };
+  if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+    alert("❌ EmailJS credentials missing. Check .env or hosting environment variables.");
+    return;
+  }
+
+  emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+    .then(
+      (result) => {
+        console.log(result.text);
+        alert("✅ Consultation request sent successfully!");
+        form.current?.reset();
+      },
+      (error) => {
+        console.error(error.text);
+        alert("❌ Failed to send request. Please try again later.");
+      }
+    );
+};
+
 
   return (
     <section id="contact" className="py-20 px-6 bg-gray-50">
@@ -144,7 +147,9 @@ export default function Contact() {
                   name="user_email"
                   id="email"
                   required
+              
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
                   placeholder="john@example.com"
                 />
