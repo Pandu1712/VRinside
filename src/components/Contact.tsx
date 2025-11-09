@@ -151,6 +151,42 @@ Hyderabad- 500049</p>
   <p className="text-xs text-gray-500 mt-1">Enter a valid 10-digit mobile number</p>
 </div>
 
+
+{/* Area */}
+<div>
+  <label
+    htmlFor="area"
+    className="block text-sm font-semibold text-gray-700 mb-2"
+  >
+    Area (in Sq. Ft)
+  </label>
+  <input
+    type="text"
+    name="user_area"
+    id="area"
+    placeholder="e.g., 1200 Sq Ft"
+    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
+  />
+</div>
+
+{/* Name of the Community */}
+<div>
+  <label
+    htmlFor="community"
+    className="block text-sm font-semibold text-gray-700 mb-2"
+  >
+    Name of the Community
+  </label>
+  <input
+    type="text"
+    name="user_community"
+    id="community"
+    placeholder="e.g., Aditya Imperial Heights"
+    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
+  />
+</div>
+
+
 {/* Project Type */}
       <div>
         <label

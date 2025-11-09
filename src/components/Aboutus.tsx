@@ -9,14 +9,14 @@ export default function AboutUs() {
           <h2 className="text-3xl md:text-5xl font-bold text-[#362C59] mb-6">
             About Us
           </h2>
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed text-justify">
             Welcome to <span className="font-semibold text-[#362C59]">Inizio Interiors</span>, 
             where creativity meets functionality to transform your spaces into timeless masterpieces. 
             Based in the vibrant city of Hyderabad, we are a passionate team of interior designers 
             dedicated to creating beautiful, personalized environments that reflect your style and 
             elevate your lifestyle.
           </p>
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed text-justify">
             At Inizio Interiors, we understand that the spaces you inhabit are a direct reflection 
             of who you are, your aspirations, and your unique personality. Whether it's a modular 
             kitchen, a luxurious living room, or a serene pooja room, we take pride in delivering 

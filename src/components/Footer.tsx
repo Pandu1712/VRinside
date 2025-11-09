@@ -1,4 +1,4 @@
-import {  MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import {  MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -80,20 +80,19 @@ export default function Footer() {
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 text-[#433673] mt-0.5" />
                 <span>
-                  23, Sunrise Avenue,<br />
-                  Hyderabad, Telangana, India
+                  Flat No 1302 , Block I , Aditya Imperial Heights Hafeezpet Hyderabad- 500049
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-[#433673]" />
-                <a href="tel:+919600514632" className="hover:text-[#362C59] transition-colors">
-                  +91 96005 14632
+                <a href="tel:+9186885 47851" className="hover:text-[#362C59] transition-colors">
+                  +91 86885 47851
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-[#433673]" />
-                <a href="mailto:info@iniziointeriors.com" className="hover:text-[#362C59] transition-colors">
-                  info@iniziointeriors.com
+                <a href="mailto:iniziointeriorshyd@gmail.com" className="hover:text-[#362C59] transition-colors">
+                 iniziointeriorshyd@gmail.com
                 </a>
               </li>
             </ul>
@@ -104,7 +103,7 @@ export default function Footer() {
   href="https://facebook.com"
   target="_blank"
   rel="noopener noreferrer"
-  className="p-2 rounded-full text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
+  className="p-2 rounded-full bg-gray-300 text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
 >
   <Facebook className="w-5 h-5" />
 </a>
@@ -113,7 +112,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-             className="p-2 rounded-full text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
+             className="p-2 rounded-full bg-gray-300 text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -121,9 +120,9 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-             className="p-2 rounded-full text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
+             className="p-2 rounded-full bg-gray-300 text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
               >
-                <Linkedin className="w-5 h-5" />
+                <Youtube className="w-6 h-6" />
               </a>
             </div>
           </div>

@@ -28,11 +28,11 @@ export const services: Service[] = [
       'Bespoke modular kitchens combining innovation and elegance. Crafted with smart storage, premium materials, and seamless modular units that blend style with utility.',
     category: 'Functional Areas',
     image:
-      'https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702612/Kitchen_-_Main_jmcaz7.jpg',
     gallery: [
-      'https://images.pexels.com/photos/373548/pexels-photo-373548.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://media.designcafe.com/wp-content/uploads/2020/05/09150825/blue-and-white-modular-kitchen-design.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702612/Kitchen_1_zbzooc.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702612/Kitchen_-2_sidfbw.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702702/kitchen4_gazbqd.jpg',
     ],
     tags: ['Modern', 'Storage Solutions', 'Custom Design'],
     featured: true,
@@ -45,11 +45,11 @@ export const services: Service[] = [
       'Luxury meets comfort with custom-designed bedrooms. From bed back paneling to elegant lighting and wardrobes, every detail reflects your unique personality and lifestyle.',
     category: 'Private Spaces',
     image:
-      'https://i.pinimg.com/736x/37/9c/26/379c2620acd5172bc5cb16a0ba062712.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_-_Main_tstccu.jpg',
     gallery: [
-      'https://images.alphacoders.com/740/thumb-1920-740968.jpg',
-      'https://www.homelane.com/blog/wp-content/uploads/2022/10/panel-pvc-room-designs.jpg',
-      'https://events.rumah123.com/wp-content/uploads/sites/38/2023/03/21165023/Ukuran-Kamar-Tidur-4x6-Meter-1024x687.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_1_crd8al.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_2_qrmm7f.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_-_3_vupliw.jpg',
     ],
     tags: ['Luxury', 'Comfort', 'Lighting'],
     featured: true,
@@ -62,11 +62,11 @@ export const services: Service[] = [
       'Custom wardrobes designed for efficiency and elegance. Explore walk-in closets, wall-mounted units, and tinted glass designs that redefine organized living.',
     category: 'Private Spaces',
     image:
-      'https://media.designcafe.com/wp-content/uploads/2021/10/30135203/wardrobe-finished-in-slate-with-open-shelf.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693782/Wardrobe_-_Main_b9lplx.jpg',
     gallery: [
-      'https://images.livspace-cdn.com/w:1200/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-1657179080-NnXAg/wardrobe-1657179096-XjS7i/kid-bedroom-1-1658836616-nY8Uc.png',
-      'https://i.pinimg.com/736x/e6/b7/8a/e6b78a56f2847b34f3570197dd068ea4.jpg',
-      'https://images.livspace-cdn.com/w:1440/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-1657179080-NnXAg/wardrobe-1657179096-XjS7i/wardrobe-04-1664369521-zemvs.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693781/Wardrobe_1_ywk2qz.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693781/Wardrobes_2_avdva0.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693780/Wardrobe_3_d6fr8p.jpg',
     ],
     tags: ['Organization', 'Walk-in Closets', 'Glass Designs'],
     featured: false,
@@ -96,11 +96,11 @@ export const services: Service[] = [
       'Stylish and comfortable living spaces designed to bring warmth and sophistication. From statement walls to custom furniture, we create spaces that feel like home.',
     category: 'Living Spaces',
     image:
-      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702507/Living_Room_Main_dius4h.jpg',
     gallery: [
-      'https://wallup.net/wp-content/uploads/2014/08/interior-design-living-room.jpg',
-      'https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png',
-      'https://images.pexels.com/photos/813691/pexels-photo-813691.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702506/Drawing_Room_-_1_a9itln.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702506/Living_Room_2_eb8qnc.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702506/Living_Room_3_tgkb0c.jpg',
     ],
     tags: ['Warmth', 'Statement Walls', 'Custom Furniture'],
     featured: true,
@@ -113,9 +113,9 @@ export const services: Service[] = [
       'Transform your living area with entertainment units that combine functionality and design—perfect for displaying your TV, decor, and collectibles in style.',
     category: 'Living Spaces',
     image:
-      'https://images.pexels.com/photos/813691/pexels-photo-813691.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693656/Home_Theatre_y91b4f.jpg',
     gallery: [
-      'https://simplinteriors.com/wp-content/uploads/2021/04/LUXURY-LIVING-ROOM-e1617724022897-1024x942.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693656/TV_Unit_szjlug.jpg',
       'https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-1657179080-NnXAg/tv-unit-1657603921-6y6tm/living-view-3-option-2-1-1-1662029420-4RCM2.jpg',
       'https://i.pinimg.com/originals/34/7a/6d/347a6d8835e0be95bbfb649a40ac76c7.jpg',
     ],
@@ -130,11 +130,11 @@ export const services: Service[] = [
       'Peaceful and sacred spaces crafted with devotion. From traditional temple-style setups to modern minimalist sanctuaries, we design pooja rooms that inspire serenity.',
     category: 'Specialized',
     image:
-      'https://i.pinimg.com/originals/dc/a4/f7/dca4f7b2702c9d4ce8760df4227ab0e8.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_Main_uzya5s.jpg',
     gallery: [
-      'https://www.decorpot.com/images/350390464top-interior-design-essentials-for-pooja-rooms-in-chennai-homes.jpg',
-      'https://www.mchoiceinterior.com/images/services/pooja-cupboards3.jpg',
-      'https://i.pinimg.com/originals/6f/4f/e6/6f4fe631b78897576eb88fd843d3b42c.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_1_kddt65.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_2_u2swyc.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_3_d0hups.jpg',
     ],
     tags: ['Sacred', 'Traditional', 'Minimalist'],
     featured: false,
@@ -151,8 +151,8 @@ export const services: Service[] = [
       'https://www.sanfrandesign.com/wp-content/uploads/2020/08/Worry-About-Function.jpg',
     gallery: [
       'https://stylesatlife.com/wp-content/uploads/2020/01/Best-Office-Interior-Designs.jpg',
-      'https://i.pinimg.com/originals/0c/e5/73/0ce573d1f7d0e1a25f5cb7c1369e0443.jpg',
-      'https://i.pinimg.com/originals/3a/c7/4c/3ac74ccdca56d98a5a980e9c831cc792.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693885/Home_Office_2_wn4lcy.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693884/Home_Office_-_3_h6hzsa.jpg',
     ],
     tags: ['Ergonomic', 'Productivity', 'Organization'],
     featured: false,

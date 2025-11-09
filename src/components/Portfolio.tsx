@@ -10,12 +10,12 @@ const portfolioItems = [
     category: 'Luxury Comfort'
   },
   {
-    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353328/p-3_uzlaph.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762703302/dining_gg6bjd.jpg',
     title: 'Elegant Dining Room',
     category: 'Classic Style'
   },
   {
-    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353324/p-6_bixf4r.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693343/Modern_Bedroom_endqcv.jpg',
     title: 'Modern Bedroom',
     category: 'Functional Beauty'
   },  
@@ -25,7 +25,7 @@ const portfolioItems = [
     category: 'Productive Environment'
   },
   {
-    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353324/p-6_bixf4r.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762692843/Contemporary_Living_Area_uxxndp.jpg',
     title: 'Contemporary Living Area',
     category: 'Relaxation Suite'
   }
