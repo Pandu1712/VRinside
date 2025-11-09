@@ -53,47 +53,67 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
-          {/* Left info */}
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#433673] mb-6">
-             Contact Us
-            </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Share your project details and budget range — our team will reach out for your personalized consultation.
-            </p>
+         {/* Left info */}
+<div>
+  <h2 className="text-3xl md:text-5xl font-bold text-[#433673] mb-6">
+    Contact Us
+  </h2>
+  <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+    Share your project details and budget range — our team will reach out for your personalized consultation.
+  </p>
 
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="bg-[#BDB8D9] p-3 rounded-lg">
-                  <Phone className="w-6 h-6 text-[#433673]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Call Us</p>
-                  <p className="text-gray-600">+91 86885 47851</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="bg-[#BDB8D9] p-3 rounded-lg">
-                  <Mail className="w-6 h-6 text-[#433673]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Email Us</p>
-                  <p className="text-gray-600">iniziointeriorshyd@gmail.com</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="bg-[#BDB8D9] p-3 rounded-lg">
-                  <MapPin className="w-6 h-6 text-[#433673]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Visit Us</p>
-                  <p className="text-gray-600">Flat No 1302 , Block I , Aditya Imperial Heights 
-Hafeezpet 
-Hyderabad- 500049</p>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="space-y-6">
+    {/* Phone */}
+    <div className="flex items-start space-x-4">
+      <div className="bg-[#BDB8D9] p-3 rounded-lg">
+        <Phone className="w-6 h-6 text-[#433673]" />
+      </div>
+      <div>
+        <p className="font-semibold text-gray-900">Call Us</p>
+        <p className="text-gray-600">+91 86885 47851</p>
+      </div>
+    </div>
+
+    {/* Email */}
+    <div className="flex items-start space-x-4">
+      <div className="bg-[#BDB8D9] p-3 rounded-lg">
+        <Mail className="w-6 h-6 text-[#433673]" />
+      </div>
+      <div>
+        <p className="font-semibold text-gray-900">Email Us</p>
+        <p className="text-gray-600">iniziointeriorshyd@gmail.com</p>
+      </div>
+    </div>
+
+    {/* Address */}
+    <div className="flex items-start space-x-4">
+      <div className="bg-[#BDB8D9] p-3 rounded-lg">
+        <MapPin className="w-6 h-6 text-[#433673]" />
+      </div>
+      <div>
+        <p className="font-semibold text-gray-900">Visit Us</p>
+        <p className="text-gray-600">
+          Flat No 1302, Block I, Aditya Imperial Heights <br />
+          Hafeezpet, Hyderabad – 500049
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Google Map Embed */}
+  <div className="mt-8 rounded-xl overflow-hidden shadow-lg">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.501765622851!2d78.35637197462907!3d17.48354520002894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb924728ff2ba9%3A0x8c10083792bdba56!2sAditya%20Imperial%20Heights!5e0!3m2!1sen!2sin!4v1762704481561!5m2!1sen!2sin"
+      width="100%"
+      height="300"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
 
           {/* Right form */}
           <div className="bg-white p-8 rounded-2xl shadow-xl">
