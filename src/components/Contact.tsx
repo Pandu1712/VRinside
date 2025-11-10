@@ -183,7 +183,7 @@ export default function Contact() {
     htmlFor="location"
     className="block text-sm font-semibold text-gray-700 mb-2"
   >
-    Area (in Sq. Ft)
+   Location
   </label>
   <input
     type="text"
