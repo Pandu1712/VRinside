@@ -1,119 +1,73 @@
-import { ChevronRight } from 'lucide-react';
-import type { Service } from '../types/service';
+import { ChevronRight } from "lucide-react";
+import type { Service } from "../types/service";
 
-interface ServiceCardProps {
+interface Props {
   service: Service;
-  viewMode: 'grid' | 'list';
+  viewMode: "grid" | "list";
   onSelect: () => void;
 }
 
-export default function ServiceCard({ service, viewMode, onSelect }: ServiceCardProps) {
+export default function ServiceCard({ service, onSelect }: Props) {
   const Icon = service.icon;
 
-  if (viewMode === 'list') {
+  
     return (
-      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-        <div className="flex flex-col md:flex-row">
-          <div className="relative md:w-80 h-64 md:h-auto overflow-hidden">
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full">
-              <span className="text-sm font-semibold text-gray-700">{service.category}</span>
-            </div>
+      <div className="relative rounded-xl bg-white border border-green-200 shadow hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden group">
+
+        {/* Image */}
+        <div className="relative w-full h-52 overflow-hidden">
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+
+        {/* Premium Ribbon */}
+        {service.featured && (
+          <span className="absolute top-3 right-[-22px] rotate-45 bg-green-600 text-white text-[10px] px-8 py-[2px] font-bold">
+            PREMIUM
+          </span>
+        )}
+
+        {/* Content */}
+        <div className="p-4 text-center flex flex-col items-center">
+
+          {/* Icon */}
+          <div className="w-11 h-11 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-md mt-2 border-4 border-white">
+            <Icon size={18} className="text-white" />
           </div>
 
-          <div className="flex-1 p-8 flex flex-col justify-between">
-            <div>
-              <div className="flex items-start justify-between mb-4">
-                <div className="bg-gray-900 w-14 h-14 rounded-xl flex items-center justify-center">
-                  <Icon className="w-7 h-7 text-white" />
-                </div>
-                {service.featured && (
-                  <span className="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">
-                    Featured
-                  </span>
-                )}
-              </div>
+          <h3 className="mt-3 text-base font-semibold text-gray-900">
+            {service.title}
+          </h3>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">{service.description}</p>
+          <p className="text-gray-600 text-xs mt-1 line-clamp-2">
+            {service.description}
+          </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
-                {service.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <button
-              onClick={onSelect}
-              className="flex items-center gap-2 text-gray-900 font-semibold hover:gap-3 transition-all group-hover:text-gray-700"
-            >
-              <span>View Details</span>
-              <ChevronRight className="w-5 h-5" />
-            </button>
+          {/* Tags */}
+          <div className="flex flex-wrap justify-center gap-1 mt-2">
+            {service.tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="text-[10px] bg-green-50 text-green-700 px-2 py-[2px] rounded-full border border-green-200"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
+
+        {/* Button */}
+        <button
+          onClick={onSelect}
+          className="w-full py-2 bg-green-600 text-white text-xs font-medium flex items-center justify-center gap-1 hover:bg-green-700 transition-colors"
+        >
+          Explore Details <ChevronRight size={14} />
+        </button>
       </div>
     );
   }
 
-  return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:-translate-y-2">
-      <div className="relative h-64 overflow-hidden">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full">
-          <span className="text-xs font-semibold text-gray-700">{service.category}</span>
-        </div>
-        {service.featured && (
-          <div className="absolute top-4 left-4 bg-amber-400 text-amber-900 px-3 py-1 rounded-full">
-            <span className="text-xs font-bold">Featured</span>
-          </div>
-        )}
-      </div>
 
-      <div className="p-6">
-        <div className="bg-gray-900 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-          <Icon className="w-6 h-6 text-white" />
-        </div>
-
-        <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
-          {service.description}
-        </p>
-
-        <div className="flex flex-wrap gap-2 mb-4">
-          {service.tags.slice(0, 3).map((tag) => (
-            <span
-              key={tag}
-              className="bg-gray-100 text-gray-700 text-xs font-medium px-2 py-1 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        <button
-          onClick={onSelect}
-          className="flex items-center gap-2 text-gray-900 font-semibold hover:gap-3 transition-all text-sm cursor-pointer"
-        >
-          <span>View Details</span>
-          <ChevronRight className="w-4 h-4" />
-        </button>
-      </div>
-    </div>
-  );
-}

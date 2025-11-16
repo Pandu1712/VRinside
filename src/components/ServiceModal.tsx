@@ -1,5 +1,5 @@
-import { X } from 'lucide-react';
-import type { Service } from '../types/service';
+import { X } from "lucide-react";
+import type { Service } from "../types/service";
 
 interface ServiceModalProps {
   service: Service;
@@ -11,125 +11,124 @@ export default function ServiceModal({ service, onClose }: ServiceModalProps) {
 
   return (
     <div
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4"
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-in zoom-in-95 duration-300"
+        className="bg-white rounded-2xl w-full max-w-5xl max-h-[90vh] overflow-y-auto shadow-xl border border-green-200"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 px-8 py-6 flex items-center justify-between z-10">
-          <div className="flex items-center gap-4">
-            <div className="bg-gray-900 w-12 h-12 rounded-xl flex items-center justify-center">
+        {/* Header */}
+        <div className="sticky top-0 bg-white border-b border-green-100 px-6 py-4 flex items-center justify-between z-10">
+          <div className="flex items-center gap-3">
+            <div className="bg-green-600 w-12 h-12 rounded-xl flex items-center justify-center shadow-md">
               <Icon className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">{service.title}</h2>
-              <span className="text-sm text-gray-500">{service.category}</span>
+              <h2 className="text-2xl font-bold text-green-700">{service.title}</h2>
+              <p className="text-sm text-gray-500">{service.category}</p>
             </div>
           </div>
+
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-2 hover:bg-green-100 active:bg-green-200 rounded-full transition"
           >
-            <X className="w-6 h-6 text-gray-600" />
+            <X className="w-6 h-6 text-green-700" />
           </button>
         </div>
 
-        <div className="p-8">
-          <div className="mb-8">
-            <div className="relative h-96 rounded-2xl overflow-hidden mb-6">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-cover"
-              />
+        {/* Body */}
+        <div className="p-6 space-y-8">
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
+            {service.tags.map((tag) => (
+              <span
+                key={tag}
+                className="bg-green-100 text-green-700 text-sm font-medium px-4 py-1.5 rounded-full border border-green-200"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Description */}
+          <p className="text-gray-700 leading-relaxed text-lg">
+            {service.description}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+              <h3 className="font-bold text-green-700 text-lg mb-3">Key Features</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                {[
+                  "Premium quality materials",
+                  "Customized design solutions",
+                  "Expert craftsmanship",
+                  "Timely delivery & installation",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="w-2 h-2 bg-green-700 rounded-full mt-1.5"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-6">
-              {service.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-gray-100 text-gray-700 text-sm font-medium px-4 py-2 rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
+            <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+              <h3 className="font-bold text-green-700 text-lg mb-3">What's Included</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                {[
+                  "Consultation & planning",
+                  "3D design preview",
+                  "Material guidance",
+                  "Full execution & finishing",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="w-2 h-2 bg-green-700 rounded-full mt-1.5"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
+          </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">{service.description}</p>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Key Features</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Premium quality materials</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Customized design solutions</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Expert craftsmanship</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Timely project completion</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">What's Included</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Initial consultation & planning</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">3D design visualization</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Material selection assistance</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2"></div>
-                    <span className="text-gray-700">Installation & finishing</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
-            <div className="grid md:grid-cols-3 gap-4">
+          {/* Equal Image Gallery */}
+          <div>
+            <h3 className="text-lg font-bold text-green-700 mb-3">Gallery</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {service.gallery.map((img, i) => (
-                <div key={i} className="relative h-64 rounded-2xl overflow-hidden group">
+                <div
+                  key={i}
+                  className="rounded-xl aspect-square overflow-hidden border border-green-200"
+                >
                   <img
                     src={img}
-                    alt={`${service.title} ${i + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    alt="Gallery"
+                    className="w-full h-full object-cover hover:scale-110 transition duration-500"
                   />
                 </div>
               ))}
             </div>
           </div>
 
-        {/*   <div className="flex gap-4 pt-6 border-t border-gray-200">
-            <button className="flex-1 bg-gray-900 text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition-colors">
-              Get a Quote
+          {/* Footer Buttons */}
+          <div className="flex gap-4 pt-4">
+            <button
+              onClick={() => alert("Quote Requested")}
+              className="flex-1 bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition"
+            >
+              Get Quote
             </button>
             <button
               onClick={onClose}
-              className="flex-1 bg-gray-100 text-gray-900 py-4 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
+              className="flex-1 bg-green-100 text-green-700 py-3 rounded-xl font-semibold border border-green-200 hover:bg-green-200 transition"
             >
-              Close
+              Cancel
             </button>
-          </div> */}
+          </div>
+
         </div>
       </div>
     </div>

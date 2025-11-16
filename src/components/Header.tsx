@@ -6,39 +6,28 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState("home");
 
   return (
-    <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed w-full bg-gradient-to-r from-[#5FBF3B] via-[#5FBF3B] to-white backdrop-blur-md shadow-md z-50 border-b border-[#7ED957]/30">
       <nav className="max-w-7xl mx-auto px-6 py-4 h-20 flex items-center justify-between">
-        {/* Logo Section */}
-        <div className="flex items-center space-x-0">
-          <img
-            src="/1.1.png"
-            alt="Inizio Interiors Logo"
-            className="w-28 sm:w-32 md:w-36 h-auto object-contain -my-2"
-          />
 
-          <div className="flex flex-col leading-none ml-[-4px] whitespace-nowrap">
-            <span
-              className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-[#362C59]"
-             /*  style={{
-                fontFamily: "'Playfair Display', serif",
-                letterSpacing: "1px",
-              }} */
-            >
-              Inizio Interiors
-            </span>
-          </div>
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <img
+            src="/Vrlogo1.png"
+            alt="VR Inside Interiors Logo"
+            className="w-28 sm:w-32 md:w-36 h-auto object-contain"
+          />
         </div>
 
+
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-6 font-medium">
           <a
             href="#home"
             onClick={() => setActiveSection("home")}
-            className={`${
-              activeSection === "home"
-                ? "text-[#362C59] font-semibold"
-                : "text-gray-700"
-            } hover:text-[#362C59] transition-colors`}
+            className={`px-3 py-2 rounded-md transition-all ${activeSection === "home"
+                ? "bg-[#7ED957] text-white shadow font-semibold"
+                : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+              }`}
           >
             Home
           </a>
@@ -46,11 +35,10 @@ export default function Header() {
           <a
             href="#services"
             onClick={() => setActiveSection("services")}
-            className={`${
-              activeSection === "services"
-                ? "text-[#362C59] font-semibold"
-                : "text-gray-700"
-            } hover:text-[#362C59] transition-colors`}
+            className={`px-3 py-2 rounded-md transition-all ${activeSection === "services"
+                ? "bg-[#7ED957] text-white shadow font-semibold"
+                : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+              }`}
           >
             Services
           </a>
@@ -58,48 +46,56 @@ export default function Header() {
           <a
             href="#portfolio"
             onClick={() => setActiveSection("portfolio")}
-            className={`${
-              activeSection === "portfolio"
-                ? "text-[#362C59] font-semibold"
-                : "text-gray-700"
-            } hover:text-[#362C59] transition-colors`}
+            className={`px-3 py-2 rounded-md transition-all ${activeSection === "portfolio"
+                ? "bg-[#7ED957] text-white shadow font-semibold"
+                : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+              }`}
           >
-            Portfolio
+            Projects
           </a>
 
-          <a
+         {/*  <a
             href="#testimonials"
             onClick={() => setActiveSection("testinomials")}
-            className={`${
-              activeSection === "testinomials"
-                ? "text-[#362C59] font-semibold"
-                : "text-gray-700"
-            } hover:text-[#362C59] transition-colors`}
+            className={`px-3 py-2 rounded-md transition-all ${activeSection === "testinomials"
+                ? "bg-[#7ED957] text-white shadow font-semibold"
+                : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+              }`}
           >
-            Testimonials
-          </a>
+            Reviews
+          </a> */}
+
           <a
             href="#how-it-works"
             onClick={() => setActiveSection("how-it-works")}
-            className={`${
-              activeSection === "how-it-works"
-                ? "text-[#362C59] font-semibold"
-                : "text-gray-700"
-            } hover:text-[#362C59] transition-colors`}
+            className={`px-3 py-2 rounded-md transition-all ${activeSection === "how-it-works"
+                ? "bg-[#7ED957] text-white shadow font-semibold"
+                : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+              }`}
           >
             How It Works
           </a>
-        </div>
-
-        {/* CTA Button (Desktop only) */}
-        <button className="hidden md:block bg-[#433673] text-white px-6 py-2 rounded-lg hover:bg-[#362C59] transition-colors">
           <a
             href="#contact"
-            className="text-[white] hover:text-[white] transition-colors"
+            onClick={() => setActiveSection("contact")}
+            className={`px-3 py-2 rounded-md transition-all ${activeSection === "contact"
+                ? "bg-[#7ED957] text-white shadow font-semibold"
+                : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+              }`}
           >
             Contact
           </a>
-        </button>
+        </div>
+
+        {/* CTA Button Desktop */}
+        {/*  <button className="hidden md:block bg-[#7ED957] text-white px-6 py-2 rounded-lg shadow hover:bg-[#5FBF3B] transition-all">
+          <a
+            href="#contact"
+            className="text-[white] hover:text-white transition-all"
+          >
+            Contact
+          </a>
+        </button> */}
 
         {/* Mobile Menu Button */}
         <button
@@ -112,84 +108,83 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-md border-t border-gray-200">
-          <div className="flex flex-col space-y-4 px-6 py-4">
+        <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-md border-t border-[#7ED957]/40">
+          <div className="flex flex-col space-y-4 px-6 py-4 font-medium">
             <a
               href="#home"
               onClick={() => {
                 setActiveSection("home");
                 setIsOpen(false);
               }}
-              className={`${
-                activeSection === "home"
-                  ? "text-[#362C59] font-semibold"
-                  : "text-gray-700"
-              } hover:text-[#362C59] transition-colors`}
+              className={`px-3 py-2 rounded-md transition-all ${activeSection === "home"
+                  ? "bg-[#7ED957] text-white shadow font-semibold"
+                  : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+                }`}
             >
               Home
             </a>
+
             <a
               href="#services"
-            onClick={() => {
+              onClick={() => {
                 setActiveSection("services");
                 setIsOpen(false);
               }}
-              className={`${
-                activeSection === "services"
-                  ? "text-[#362C59] font-semibold"
-                  : "text-gray-700"
-              } hover:text-[#362C59] transition-colors`}
+              className={`px-3 py-2 rounded-md transition-all ${activeSection === "services"
+                  ? "bg-[#7ED957] text-white shadow font-semibold"
+                  : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+                }`}
             >
               Services
             </a>
+
             <a
               href="#portfolio"
-               onClick={() => {
+              onClick={() => {
                 setActiveSection("portfolio");
                 setIsOpen(false);
               }}
-              className={`${
-                activeSection === "portfolio"
-                  ? "text-[#362C59] font-semibold"
-                  : "text-gray-700"
-              } hover:text-[#362C59] transition-colors`}
+              className={`px-3 py-2 rounded-md transition-all ${activeSection === "portfolio"
+                  ? "bg-[#7ED957] text-white shadow font-semibold"
+                  : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+                }`}
             >
               Portfolio
             </a>
+
             <a
               href="#testimonials"
-                 onClick={() => {
+              onClick={() => {
                 setActiveSection("testinomials");
                 setIsOpen(false);
               }}
-              className={`${
-                activeSection === "testinomials"
-                  ? "text-[#362C59] font-semibold"
-                  : "text-gray-700"
-              } hover:text-[#362C59] transition-colors`}
+              className={`px-3 py-2 rounded-md transition-all ${activeSection === "testinomials"
+                  ? "bg-[#7ED957] text-white shadow font-semibold"
+                  : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+                }`}
             >
               Testimonials
             </a>
+
             <a
               href="#how-it-works"
-                onClick={() => {
+              onClick={() => {
                 setActiveSection("how-it-works");
                 setIsOpen(false);
               }}
-              className={`${
-                activeSection === "how-it-works"
-                  ? "text-[#362C59] font-semibold"
-                  : "text-gray-700"
-              } hover:text-[#362C59] transition-colors`}
+              className={`px-3 py-2 rounded-md transition-all ${activeSection === "how-it-works"
+                  ? "bg-[#7ED957] text-white shadow font-semibold"
+                  : "text-gray-800 hover:bg-[#E3FFD6] hover:text-[#5FBF3B]"
+                }`}
             >
               How It Works
             </a>
 
-            {/* Mobile CTA Button */}
-            <button className="bg-[#433673] text-white px-6 py-2 rounded-lg hover:bg-[#362C59] transition-colors">
+            {/* Mobile CTA */}
+            <button className="bg-[#7ED957] text-white px-6 py-2 rounded-lg shadow hover:bg-[#5FBF3B] transition-all">
               <a
                 href="#contact"
-                className="text-white hover:text-[white] transition-colors"
+                className="text-white hover:text-white transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 Contact

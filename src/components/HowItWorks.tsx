@@ -1,109 +1,104 @@
-import  { type JSX } from "react";
+import { type JSX } from "react";
+import { Lightbulb, PenTool, Layers, Hammer, CheckCircle2, Headphones } from "lucide-react";
 
 type Step = {
   id: number;
   title: string;
   description: string;
+  icon: JSX.Element;
 };
 
 const steps: Step[] = [
   {
     id: 1,
-    title: "Discovery & Consultation",
+    title: "Initial Consultation",
     description:
-      "Every project begins with understanding your vision. We take the time to listen to your ideas, preferences, and specific requirements. Whether you're looking to redesign a single room or renovate an entire home, our team will guide you through the design possibilities, ensuring we capture your style, functionality needs, and budget.",
+      "We begin with a friendly discussion to understand your lifestyle, taste, budget, and space goals so we can tailor the perfect design direction.",
+    icon: <Lightbulb className="w-6 h-6 text-[#42A653]" />,
   },
   {
     id: 2,
-    title: "Concept Design & Planning",
+    title: "Concept & Visual Moodboards",
     description:
-      "Once we understand your vision, our expert designers create a concept design that reflects your aesthetic preferences and functional needs. We present mood boards, layouts, and 3D visualizations to help you see your dream space come to life. During this phase, we refine every detail to make sure it aligns with your expectations.",
+      "Our design experts prepare a visual direction including layouts, color palettes, material choices, and moodboards to match your personality and comfort.",
+    icon: <PenTool className="w-6 h-6 text-[#42A653]" />,
   },
   {
     id: 3,
-    title: "Material Selection & Finalization",
+    title: "3D Model & Material Selection",
     description:
-      "With the design concept approved, we move on to selecting the best materials, finishes, and furnishings that match your vision. Our team works closely with you to ensure every choice—from flooring to furniture—is perfect for your space. We only use premium-quality materials that combine style, durability, and sustainability.",
+      "View your future space in realistic 3D renders and finalize laminates, textures, lighting, fabrics, and furniture—ensuring quality + durability.",
+    icon: <Layers className="w-6 h-6 text-[#42A653]" />,
   },
   {
     id: 4,
-    title: "Execution & Installation",
+    title: "Production & On-Site Execution",
     description:
-      "Once everything is finalized, we begin the implementation phase. Our skilled craftsmen and experienced installation team bring the design to life. We manage every step of the process, from coordinating with suppliers to overseeing construction, ensuring everything runs smoothly and on schedule.",
+      "Skilled craftsmen and engineers begin your project while we supervise onsite, ensuring flawless finishing, safety, and timely progress.",
+    icon: <Hammer className="w-6 h-6 text-[#42A653]" />,
   },
   {
     id: 5,
-    title: "Final Touches & Handover",
+    title: "Quality Check & Final Styling",
     description:
-      "Once the design is fully executed, we add those special touches that bring the space together—decor, lighting, and accessories that enhance the overall aesthetic. After a thorough final inspection, we hand over your new space, making sure everything is perfect and ready for you to enjoy.",
+      "After installation, we add decor, lighting, and styling elements. Final inspection ensures everything is perfect before handover.",
+    icon: <CheckCircle2 className="w-6 h-6 text-[#42A653]" />,
   },
   {
     id: 6,
-    title: "Aftercare & Support",
+    title: "Lifetime Support",
     description:
-      "At Inizio Interiors, we’re committed to your satisfaction. Our job doesn’t end at handover. We provide aftercare support to ensure that your space remains as beautiful and functional as the day it was completed. Should you need any adjustments or future assistance, we're just a call away.",
+      "We stay connected even after completion for maintenance, touch-ups, and interior expansion support whenever needed.",
+    icon: <Headphones className="w-6 h-6 text-[#42A653]" />,
   },
 ];
 
 export default function HowItWorks(): JSX.Element {
   return (
-    <section id="how-it-works" className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto mt-6">
+    <section id="how-it-works" className="py-20 px-6 bg-gradient-to-br from-[#E8FFE6] via-white to-[#E8FFE6]">
+      <div className="max-w-7xl mx-auto">
+
         {/* Header */}
-        <header className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#433673]">
-            How It Works {/* <span className="text-[#433673]">Inizio Interiors</span> */}
+        <header className="text-center mb-14">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#347844] tracking-wide">
+            Our Work Process
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
-            At Inizio Interiors, we follow a streamlined process that ensures every project is
-            executed with precision, creativity, and care. From the initial consultation to the
-            final touches, we make your design journey simple, transparent, and enjoyable.
+          <p className="mt-4 text-lg text-gray-700 max-w-4xl mx-auto">
+            We follow a transparent, smooth, and customer-friendly workflow that transforms imagination into reality with elegance and precision.
           </p>
         </header>
 
-        {/* Steps */}
-        <div className="space-y-8">
+        {/* Timeline Steps */}
+        <div className="relative border-l-4 border-[#42A653]/40 ml-6 space-y-10">
           {steps.map((step) => (
-            <article
-              key={step.id}
-              className="bg-linear-to-r from-gray-50 to-white border border-gray-100 p-6 rounded-2xl shadow-sm"
-              aria-labelledby={`step-${step.id}-title`}
-            >
-              <div className="flex items-start space-x-6">
-                {/* Number badge */}
-                <div className="shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-[#362C59] text-white flex items-center justify-center font-bold text-lg">
-                    {step.id}
+            <div key={step.id} className="pl-10 relative">
+              
+              {/* Dot */}
+              <span className="absolute w-5 h-5 bg-[#42A653] rounded-full -left-[11px] top-1 border-4 border-white shadow"></span>
+
+              <div className="bg-white border border-[#6FCF68]/30 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="p-2 rounded-full bg-[#DFFFE0] border border-[#42A653]/30">
+                    {step.icon}
                   </div>
+                  <h3 className="text-xl font-semibold text-[#2E6240]">{step.title}</h3>
                 </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  <h3
-                    id={`step-${step.id}-title`}
-                    className="text-xl font-semibold text-gray-900 mb-2"
-                  >
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
-                </div>
+                <p className="text-gray-700 leading-relaxed">{step.description}</p>
               </div>
-
-              {/* Divider (except after last item) */}
-              {step.id !== steps.length && (
-                <div className="mt-6 border-t border-dashed border-gray-200" />
-              )}
-            </article>
+            </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="mt-12 text-center">
-          <p className="text-lg text-gray-700 mb-2">
-            Start Your Design Journey Today — from initial ideas to final touches, Inizio Interiors
-            is here to guide you every step of the way.
+        <div className="mt-14 text-center">
+          <p className="text-gray-700 text-lg mb-4 font-medium">
+            Ready to make your dream space real?
           </p>
-          
+          <a href="#contact">
+            <button className="px-8 py-3 bg-[#42A653] text-white rounded-xl hover:bg-[#2E6240] transition-all shadow-md hover:shadow-lg">
+              Start Your Journey
+            </button>
+          </a>
         </div>
       </div>
     </section>

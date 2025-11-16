@@ -1,139 +1,121 @@
-import {  MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F2F2F2] text-[black] py-12 px-6">
+    <footer className="bg-gradient-to-r from-[#DFFFF0] via-white to-[#DFFFF0] text-gray-800 py-14 px-6 border-t border-[#7ED957]/40">
       <div className="max-w-7xl mx-auto">
-        {/* Top Section */}
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+
+        {/* Top Grid */}
+        <div className="grid md:grid-cols-4 gap-10 mb-10">
+
           {/* Logo & About */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-               <img
-    src="/1.1.png"
-    alt="Inizio Interiors Logo"
-    className="w-23 h-18 object-contain"
-  />
-         
-              <span  className="text-lg sm:text-lg md:text-lg font-semibold uppercase text-[#362C59]">Inizio Interiors</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <img
+                src="/VrLogo.jpg"
+                alt="Inizio Interiors Logo"
+                className="w-28 h-auto object-contain"
+              />
             </div>
-            <p className="text-gray-700 leading-relaxed">
-              Designing spaces that blend elegance, comfort, and creativity —
-              making every corner truly yours.
+            <p className="text-gray-700 leading-relaxed text-sm">
+              We create elegant, functional, and modern living spaces with high-quality workmanship and premium design standards.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold mb-4 text-[#362C59]">Quick Links</h4>
-            <ul className="space-y-2 text-gray-700">
-              <li>
-                <a
-                  href="#home"
-                  className="hover:text-[#231c3a] transition-colors"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  className="hover:text-[#231c3a] transition-colors"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#portfolio"
-                  className="hover:text-[#231c3a] transition-colors"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="hover:text-[#231c3a] transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
+            <h4 className="font-semibold text-gray-900 mb-4 text-lg">Quick Links</h4>
+            <ul className="space-y-2 text-sm">
+              {["Home", "Services", "Portfolio", "Contact"].map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="hover:text-[#5FBF3B] transition-colors font-medium"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Our Services */}
           <div>
-            <h4 className="font-bold mb-4 text-[#362C59]">Our Services</h4>
-            <ul className="space-y-2 text-gray-700">
+            <h4 className="font-semibold text-gray-900 mb-4 text-lg">Our Services</h4>
+            <ul className="space-y-2 text-sm font-medium">
               <li>Residential Interiors</li>
-              <li>Commercial Design</li>
+              <li>Commercial Designing</li>
               <li>Custom Furniture</li>
-              <li>Lighting Solutions</li>
+              <li>Lighting & Aesthetic Setup</li>
             </ul>
           </div>
 
-          {/* Contact & Socials */}
+          {/* Contact & Social */}
           <div>
-            <h4 className="font-bold mb-4 text-[#362C59]">Contact Us</h4>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start space-x-2">
-                <MapPin className="w-5 h-5 text-[#433673] mt-0.5" />
-                <span>
-                  Flat No 1302 , Block I , Aditya Imperial Heights Hafeezpet Hyderabad- 500049
-                </span>
+            <h4 className="font-semibold text-gray-900 mb-4 text-lg">Contact Us</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-[#5FBF3B] mt-0.5" />
+                <span>Flat No 1302, Block I, Aditya Imperial Heights, Hafeezpet, Hyderabad, 500049</span>
               </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="w-5 h-5 text-[#433673]" />
-                <a href="tel:+9186885 47851" className="hover:text-[#362C59] transition-colors">
-                  +91 86885 47851
+              <li className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-[#5FBF3B]" />
+                <a href="tel:+919999999999" className="hover:text-[#5FBF3B] font-medium">
+                  +91 99999 99999
                 </a>
               </li>
-              <li className="flex items-center space-x-2">
-                <Mail className="w-5 h-5 text-[#433673]" />
-                <a href="mailto:iniziointeriorshyd@gmail.com" className="hover:text-[#362C59] transition-colors">
-                 iniziointeriorshyd@gmail.com
+              <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-[#5FBF3B]" />
+                <a href="mailto:vrinsideinteriors@gmail.com" className="hover:text-[#5FBF3B] font-medium">
+                  vrinsideinteriors@gmail.com
                 </a>
               </li>
             </ul>
 
             {/* Social Icons */}
             <div className="flex space-x-4 mt-6">
-            <a
-  href="https://facebook.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="p-2 rounded-full bg-gray-300 text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
->
-  <Facebook className="w-5 h-5" />
-</a>
-
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-             className="p-2 rounded-full bg-gray-300 text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-             className="p-2 rounded-full bg-gray-300 text-gray-600 hover:bg-[#8580A6] hover:text-white transition-colors duration-300 flex items-center justify-center"
-              >
-                <Youtube className="w-6 h-6" />
-              </a>
+              {[
+                { icon: <Facebook className="w-5 h-5" />, url: "https://facebook.com" },
+                { icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com" },
+                { icon: <Youtube className="w-5 h-5" />, url: "https://youtube.com" },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-white border border-gray-300 shadow hover:border-[#5FBF3B] hover:text-[#5FBF3B] transition-all duration-300 flex items-center justify-center"
+                >
+                  {item.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-700 text-sm">
-          <p>
-            &copy; {new Date().getFullYear()} Inizio Interiors. All rights reserved.
-          </p>
+        {/* Bottom Line */}
+        <div className="border-t border-[#7ED957]/40 pt-6 text-center text-sm font-medium text-gray-700">
+          © {new Date().getFullYear()} <span className="text-[#5FBF3B] font-semibold">VR Inside Interiors</span>. All Rights Reserved.
         </div>
+
+        {/* Made With Love by StaffArc */}
+        <div className="mt-4 text-center text-xs flex justify-center items-center gap-1 text-gray-700">
+          Made with <Heart className="inline h-4 w-4 text-red-500 mx-1" /> by
+          <a
+            href="https://staffarc.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-orange-600 hover:underline font-semibold"
+          >
+            <img
+              src="https://www.staffarc.in/images/Staffarc-logo.png"
+              alt="StaffArc logo"
+              className="h-4 w-4 object-contain"
+            />
+            StaffArc
+          </a>
+        </div>
+
       </div>
     </footer>
   );
