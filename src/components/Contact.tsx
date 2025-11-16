@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { User, Mail, Phone, MapPin, Building2 } from "lucide-react";
-import { section } from "framer-motion/client";
+
 
 const ContactPage = () => {
   const [form, setForm] = useState({
