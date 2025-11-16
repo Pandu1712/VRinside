@@ -58,41 +58,46 @@ export default function ServiceModal({ service, onClose }: ServiceModalProps) {
             {service.description}
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-green-50 border border-green-200 rounded-xl p-5">
-              <h3 className="font-bold text-green-700 text-lg mb-3">Key Features</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
-                {[
-                  "Premium quality materials",
-                  "Customized design solutions",
-                  "Expert craftsmanship",
-                  "Timely delivery & installation",
-                ].map((item, i) => (
-                  <li key={i} className="flex gap-3 items-start">
-                    <span className="w-2 h-2 bg-green-700 rounded-full mt-1.5"></span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+         <div className="grid md:grid-cols-2 gap-6">
+  {/* Key Features */}
+  <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+    <h3 className="font-bold text-green-700 text-lg mb-3">Key Features</h3>
+    <ul className="space-y-2 text-gray-700 text-sm">
+      {[
+        "Top-grade materials for durability and elegance",
+        "Tailored designs to match client vision",
+        "Skilled artisans ensuring flawless finish",
+        "On-time project completion with precision",
+        "Sustainable & eco-friendly practices",
+      ].map((item, i) => (
+        <li key={i} className="flex gap-3 items-start">
+          <span className="w-2 h-2 bg-green-700 rounded-full mt-1.5"></span>
+          {item}
+        </li>
+      ))}
+    </ul>
+  </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-xl p-5">
-              <h3 className="font-bold text-green-700 text-lg mb-3">What's Included</h3>
-              <ul className="space-y-2 text-gray-700 text-sm">
-                {[
-                  "Consultation & planning",
-                  "3D design preview",
-                  "Material guidance",
-                  "Full execution & finishing",
-                ].map((item, i) => (
-                  <li key={i} className="flex gap-3 items-start">
-                    <span className="w-2 h-2 bg-green-700 rounded-full mt-1.5"></span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+  {/* What's Included */}
+  <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+    <h3 className="font-bold text-green-700 text-lg mb-3">What's Included</h3>
+    <ul className="space-y-2 text-gray-700 text-sm">
+      {[
+        "Personalized consultation & design planning",
+        "High-quality 3D design visualizations",
+        "Expert material selection guidance",
+        "Complete project execution & finishing",
+        "Post-installation support & maintenance advice",
+      ].map((item, i) => (
+        <li key={i} className="flex gap-3 items-start">
+          <span className="w-2 h-2 bg-green-700 rounded-full mt-1.5"></span>
+          {item}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
 
           {/* Equal Image Gallery */}
           <div>

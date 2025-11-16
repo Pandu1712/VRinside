@@ -61,13 +61,13 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#5FBF3B]" />
                 <a href="tel:+919999999999" className="hover:text-[#5FBF3B] font-medium">
-                  +91 99999 99999
+                  +91 9705666101 <br/>+91 9703484448
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#5FBF3B]" />
-                <a href="mailto:vrinsideinteriors@gmail.com" className="hover:text-[#5FBF3B] font-medium">
-                  vrinsideinteriors@gmail.com
+                <a href="mailto:vrinside48@gmail.com " className="hover:text-[#5FBF3B] font-medium">
+vrinside48@gmail.com 
                 </a>
               </li>
             </ul>
