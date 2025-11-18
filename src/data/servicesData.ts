@@ -7,7 +7,7 @@ import {
   Tv,
   LampDesk,
   Briefcase,
-  Home,
+
 } from 'lucide-react';
 import type { Service } from '../types/service';
 
