@@ -52,7 +52,8 @@ export default function Hero() {
         >
           {/* Main big image */}
           <motion.img
-            src="https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353049/hero_tvvzzg.jpg"
+                    
+             src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443805/WhatsApp_Image_2025-11-17_at_11.35.50_e23110d6_sjqsqy.jpg"
             className="rounded-3xl shadow-2xl w-[310px] h-[380px] object-cover"
             initial={{ x: 40, y: 10, opacity: 0 }}
             animate={{ x: 0, y: 0, opacity: 1 }}
@@ -61,7 +62,7 @@ export default function Hero() {
 
           {/* Top right small image */}
           <motion.img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+           src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg"
             className="rounded-2xl shadow-xl w-[180px] h-[130px] object-cover absolute -top-6 right-0 border-4 border-white"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -70,7 +71,8 @@ export default function Hero() {
 
           {/* Bottom left small image */}
           <motion.img
-            src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c"
+  
+              src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443795/WhatsApp_Image_2025-11-17_at_13.13.43_aa83fc2d_pyatxm.jpg"
             className="rounded-2xl shadow-xl w-[170px] h-[130px] object-cover absolute bottom-0 -left-8 border-4 border-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

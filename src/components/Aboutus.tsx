@@ -9,13 +9,13 @@ export default function AboutUs() {
           <div className="absolute w-[85%] h-[85%] bg-green-200/40 rounded-3xl blur-xl -z-10"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c"
+            src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg"
             alt="Interior Work"
             className="rounded-3xl shadow-2xl w-[420px] h-[350px] object-cover"
           />
 
           <img
-            src="https://images.unsplash.com/photo-1622015663319-653bb4390b39"
+            src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443752/WhatsApp_Image_2025-11-17_at_13.13.49_8d071b84_rjfvty.jpg"
             alt="Modern Design"
             className="rounded-2xl shadow-xl w-[200px] h-[130px] object-cover absolute -bottom-10 -left-6 border-4 border-white"
           />

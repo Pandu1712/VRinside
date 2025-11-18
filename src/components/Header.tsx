@@ -6,7 +6,7 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState("home");
 
   return (
-    <header className="fixed w-full bg-gradient-to-r from-[#5FBF3B] via-[#5FBF3B] to-white backdrop-blur-md shadow-md z-50 border-b border-[#7ED957]/30">
+    <header className="fixed w-full bg-gradient-to-r from-[#5FBF3] via-[#5FBF3B] to-white backdrop-blur-md shadow-md z-50 border-b border-[#7ED957]/30">
       <nav className="max-w-7xl mx-auto px-6 py-4 h-20 flex items-center justify-between">
 
         {/* Logo Section */}

@@ -13,26 +13,45 @@ import type { Service } from '../types/service';
 
 export const categories = [
   'All',
-  'Living Spaces',
-  'Private Spaces',
+  'Staying Spaces',
+  'Personal Spaces',
   'Functional Areas',
   'Specialized',
 ];
 
 export const services: Service[] = [
+
+  {
+    id: '3',
+    icon: DoorClosed,
+    title: 'Functional Wardrobes',
+    description:
+      'Custom wardrobes designed for efficiency and elegance. Explore walk-in closets, wall-mounted units, and tinted glass designs that redefine organized living.',
+    category: 'Personal Spaces',
+    image:
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443804/WhatsApp_Image_2025-11-17_at_13.13.42_a6036a1f_pw6lfl.jpg',
+    gallery: [
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.44_0d800591_jhfzeg.jpg",
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg",
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443757/WhatsApp_Image_2025-11-17_at_13.13.46_1da81371_sn6gam.jpg"
+    ],
+    tags: ['Organization', 'Walk-in Closets', 'Glass Designs'],
+    featured: false,
+  },
   {
     id: '1',
     icon: UtensilsCrossed,
-    title: 'Modular Kitchens',
+    title: 'Kitchens',
     description:
       'Bespoke modular kitchens combining innovation and elegance. Crafted with smart storage, premium materials, and seamless modular units that blend style with utility.',
     category: 'Functional Areas',
     image:
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702612/Kitchen_-_Main_jmcaz7.jpg',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443745/WhatsApp_Image_2025-11-17_at_13.13.53_938d3850_aklyn6.jpg',
     gallery: [
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702612/Kitchen_1_zbzooc.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702612/Kitchen_-2_sidfbw.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702702/kitchen4_gazbqd.jpg',
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443757/WhatsApp_Image_2025-11-17_at_13.13.49_f543dfd7_uq8sgm.jpg",
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443757/WhatsApp_Image_2025-11-17_at_13.13.47_2697d81c_mtd9bk.jpg",
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443751/WhatsApp_Image_2025-11-17_at_13.13.50_7904481e_vgbafr.jpg",
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443765/WhatsApp_Image_2025-11-17_at_13.13.46_a65b210e_cz9gym.jpg"
     ],
     tags: ['Modern', 'Storage Solutions', 'Custom Design'],
     featured: true,
@@ -40,50 +59,51 @@ export const services: Service[] = [
   {
     id: '2',
     icon: BedDouble,
-    title: 'Personalized Bedrooms',
+    title: 'Master Bedrooms',
     description:
       'Luxury meets comfort with custom-designed bedrooms. From bed back paneling to elegant lighting and wardrobes, every detail reflects your unique personality and lifestyle.',
-    category: 'Private Spaces',
+    category: 'Personal Spaces',
     image:
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_-_Main_tstccu.jpg',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443804/WhatsApp_Image_2025-11-17_at_13.13.41_aba8d54f_he2upp.jpg',
     gallery: [
       'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_1_crd8al.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_2_qrmm7f.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693457/Bedroom_-_3_vupliw.jpg',
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443795/WhatsApp_Image_2025-11-17_at_13.13.43_aa83fc2d_pyatxm.jpg",
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443765/WhatsApp_Image_2025-11-17_at_13.13.45_c1884d7c_zrxa2q.jpg",
+
     ],
     tags: ['Luxury', 'Comfort', 'Lighting'],
     featured: true,
   },
   {
-    id: '3',
-    icon: DoorClosed,
-    title: 'Functional Wardrobes',
+    id: '6',
+    icon: Tv,
+    title: 'Entertainment Place',
     description:
-      'Custom wardrobes designed for efficiency and elegance. Explore walk-in closets, wall-mounted units, and tinted glass designs that redefine organized living.',
-    category: 'Private Spaces',
+      'Transform your living area with entertainment units that combine functionality and design—perfect for displaying your TV, decor, and collectibles in style.',
+    category: 'Staying Spaces',
     image:
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693782/Wardrobe_-_Main_b9lplx.jpg',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443757/WhatsApp_Image_2025-11-17_at_13.13.49_cba31998_wpxc8t.jpg',
     gallery: [
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693781/Wardrobe_1_ywk2qz.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693781/Wardrobes_2_avdva0.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693780/Wardrobe_3_d6fr8p.jpg',
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443805/WhatsApp_Image_2025-11-17_at_11.35.50_e23110d6_sjqsqy.jpg",
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg",
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443752/WhatsApp_Image_2025-11-17_at_13.13.49_8d071b84_rjfvty.jpg"
     ],
-    tags: ['Organization', 'Walk-in Closets', 'Glass Designs'],
+    tags: ['Entertainment', 'Display', 'Modern'],
     featured: false,
   },
+  
   {
     id: '4',
     icon: Baby,
-    title: 'Functional Kids Room',
+    title: 'Kids Room',
     description:
       'Vibrant, safe, and creative spaces for kids. Designed with playful decor, smart storage, and ergonomic layouts that grow with your child\'s imagination.',
     category: 'Specialized',
     image:
-      'https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/spaces/childrens-room/five-pieces-of-furniture-essential-to-a-functional-kids-room/Title-kids-room-interior-design.jpg',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443765/WhatsApp_Image_2025-11-17_at_13.13.45_c1884d7c_zrxa2q.jpg',
     gallery: [
-      'https://cdn.home-designing.com/wp-content/uploads/2020/09/shared-kids-room.jpg',
-      'https://cdn.decorilla.com/online-decorating/wp-content/uploads/2020/09/Colorful-rainbow-themed-kids-room-interior-design-scaled.jpg',
-      'https://i.pinimg.com/originals/09/5b/97/095b97688975ed76c99b5a9e3c88322e.jpg',
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443746/WhatsApp_Image_2025-11-17_at_13.13.55_237f152a_dtxlzd.jpg",
+      "https://elledecor.in/wp-content/uploads/2024/09/BANNER_KIDS-BEDROOM.jpg"
     ],
     tags: ['Playful', 'Safe Design', 'Smart Storage'],
     featured: false,
@@ -94,47 +114,32 @@ export const services: Service[] = [
     title: 'Living Room Interiors',
     description:
       'Stylish and comfortable living spaces designed to bring warmth and sophistication. From statement walls to custom furniture, we create spaces that feel like home.',
-    category: 'Living Spaces',
+    category: 'Hall Rooms',
     image:
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702507/Living_Room_Main_dius4h.jpg',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg',
     gallery: [
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702506/Drawing_Room_-_1_a9itln.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702506/Living_Room_2_eb8qnc.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702506/Living_Room_3_tgkb0c.jpg',
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443757/WhatsApp_Image_2025-11-17_at_13.13.49_cba31998_wpxc8t.jpg",
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443757/WhatsApp_Image_2025-11-17_at_13.13.46_1da81371_sn6gam.jpg",
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443805/WhatsApp_Image_2025-11-17_at_11.35.50_e23110d6_sjqsqy.jpg"  
+    
     ],
     tags: ['Warmth', 'Statement Walls', 'Custom Furniture'],
     featured: true,
   },
-  {
-    id: '6',
-    icon: Tv,
-    title: 'Elegant Entertainment Units',
-    description:
-      'Transform your living area with entertainment units that combine functionality and design—perfect for displaying your TV, decor, and collectibles in style.',
-    category: 'Living Spaces',
-    image:
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693656/Home_Theatre_y91b4f.jpg',
-    gallery: [
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693656/TV_Unit_szjlug.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/EEU_-_2_ihitum.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/EEU_-_3_g1llqe.jpg',
-    ],
-    tags: ['Entertainment', 'Display', 'Modern'],
-    featured: false,
-  },
+  
   {
     id: '7',
     icon: LampDesk,
-    title: 'Divine Pooja Rooms',
+    title: 'Pooja Mandir',
     description:
       'Peaceful and sacred spaces crafted with devotion. From traditional temple-style setups to modern minimalist sanctuaries, we design pooja rooms that inspire serenity.',
     category: 'Specialized',
     image:
       'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_Main_uzya5s.jpg',
     gallery: [
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_1_kddt65.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_2_u2swyc.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762702772/Pooja_Room_-_3_d0hups.jpg',
+    "https://img.staticmb.com/mbimages/interiorDesignerCMS/decorPartner/5/projectImage/deco_puja.jpg.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L-Pxa-pStbBkfeJLyz_x5k_bQpGJfiFFxg&s"
+    
     ],
     tags: ['Sacred', 'Traditional', 'Minimalist'],
     featured: false,
@@ -143,35 +148,20 @@ export const services: Service[] = [
   {
     id: '8',
     icon: Briefcase,
-    title: 'Functional Home Office Designs',
+    title: 'Home Office',
     description:
       'Boost productivity and creativity with ergonomic home office designs featuring intelligent layouts, inspiring decor, and functional organization.',
     category: 'Functional Areas',
     image:
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/Functional_Home_Office_-_1_fgb94y.jpg',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443745/WhatsApp_Image_2025-11-17_at_13.13.52_90e039ea_crbch2.jpg',
     gallery: [
-      'https://stylesatlife.com/wp-content/uploads/2020/01/Best-Office-Interior-Designs.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693885/Home_Office_2_wn4lcy.jpg',
-      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693884/Home_Office_-_3_h6hzsa.jpg',
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.44_0d800591_jhfzeg.jpg",
+    "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443751/WhatsApp_Image_2025-11-17_at_13.13.48_303568a7_lhbn9u.jpg",
+     "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443745/WhatsApp_Image_2025-11-17_at_13.13.52_90e039ea_crbch2.jpg"
+    
     ],
     tags: ['Ergonomic', 'Productivity', 'Organization'],
     featured: false,
   },
-  {
-    id: '9',
-    icon: Home,
-    title: 'Complete Home Makeovers',
-    description:
-      'Transform your entire home with our comprehensive design solutions. We handle everything from concept to completion, ensuring a cohesive and stunning result throughout your space.',
-    category: 'Specialized',
-    image:
-      'https://media.aws.smithandsons.com.au/images/1454/1454-original.jpg',
-    gallery: [
-      'https://ahouseinthehills.com/wp-content/uploads/2024/06/Modern-Makeovers-Interior-Design-Secrets-to-Refresh-Your-Home.webp',
-      'https://media.aws.smithandsons.com.au/images/15849/15849-original.jpg',
-      'https://www.garageliving.com/hs-fs/hubfs/garage-remodels-garage-improvement-month.jpg?width=1080&name=garage-remodels-garage-improvement-month.jpg',
-    ],
-    tags: ['Complete Solutions', 'Cohesive Design', 'Full Service'],
-    featured: true,
-  },
+  
 ];

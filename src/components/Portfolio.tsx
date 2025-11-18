@@ -1,31 +1,31 @@
 const portfolioItems = [
   {
-    image: "https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353329/p-1_ier4mz.jpg",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443805/WhatsApp_Image_2025-11-17_at_11.35.50_318511c8_ybriet.jpg",
     title: "Modern Kitchen",
     category: "Minimalist Design",
   },
   {
-    image: "https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353324/p-2_ubaaks.jpg",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443796/WhatsApp_Image_2025-11-17_at_13.13.44_3c5ebcf9_dvcvtp.jpg",
     title: "Luxurious Living Room",
     category: "Luxury Comfort",
   },
   {
-    image: "https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/Elegant_Dining_Room_ghhcvi.jpg",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg",
     title: "Elegant Dining Room",
     category: "Classic Style",
   },
   {
-    image: "https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693343/Modern_Bedroom_endqcv.jpg",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443746/WhatsApp_Image_2025-11-17_at_13.13.53_c479d63a_stqpcp.jpg",
     title: "Modern Bedroom",
     category: "Functional Beauty",
   },
   {
-    image: "https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782054/Cozy_Office_Space_eyl5bc.jpg",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.44_0d800591_jhfzeg.jpg",
     title: "Cozy Office Space",
     category: "Productive Environment",
   },
   {
-    image: "https://res.cloudinary.com/dxvabsqrq/image/upload/v1762692843/Contemporary_Living_Area_uxxndp.jpg",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443796/WhatsApp_Image_2025-11-17_at_13.13.41_8af74b73_ffdvhr.jpg",
     title: "Contemporary Living Area",
     category: "Relaxation Suite",
   },
