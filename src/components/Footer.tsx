@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#5FBF3B] mt-0.5" />
-                <span>Flat No 1302, Block I, Aditya Imperial Heights, Hafeezpet, Hyderabad, 500049</span>
+                <span>Vanasthalipuram LB Nagar,Hyderbad,500074</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#5FBF3B]" />
@@ -76,7 +76,7 @@ vrinside48@gmail.com
             <div className="flex space-x-4 mt-6">
               {[
                 { icon: <Facebook className="w-5 h-5" />, url: "https://facebook.com" },
-                { icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com" },
+                { icon: <Instagram className="w-5 h-5" />, url: "https://www.instagram.com/vr_inside_?igsh=MWc0MXN3OHZ6Ymg5bw==" },
                 { icon: <Youtube className="w-5 h-5" />, url: "https://youtube.com" },
               ].map((item, idx) => (
                 <a

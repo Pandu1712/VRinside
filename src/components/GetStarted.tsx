@@ -7,7 +7,7 @@ export default function GetStarted() {
   const calendlyUrl = "https://calendly.com/iniziointeriorshyd/30min";
 
   const handleWhatsApp = () => {
-    const phoneNumber = "+918688547851";
+    const phoneNumber = "+919705666101";
     const message = encodeURIComponent(
       "Hi! I’d like to book a free consultation about interior design services."
     );
