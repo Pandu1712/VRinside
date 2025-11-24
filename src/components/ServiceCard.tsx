@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
 import type { Service } from "../types/service";
 
 interface Props {
@@ -7,65 +7,44 @@ interface Props {
 }
 
 export default function ServiceCard({ service, onSelect }: Props) {
-  const Icon = service.icon;
-
   return (
-    <div className="relative group rounded-xl overflow-hidden border border-green-200 bg-white shadow hover:shadow-lg transition-all p-4">
+    <motion.div
+      className="relative rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all"
+      whileHover={{ scale: 1.03 }}
+      onClick={onSelect}
+    >
+      <img
+        src={service.image}
+        alt={service.title}
+        className="w-full h-64 object-cover"
+      />
 
-      {/* Round Image */}
-      <div className="w-full flex justify-center">
-        <div className="w-40 h-40 rounded-full overflow-hidden shadow-md">
-          <img
-            src={service.image}
-            alt={service.title}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-          />
-        </div>
-      </div>
-
-      {/* Hover Overlay */}
-      <div
-        className="
-          absolute inset-0 bg-black/50 opacity-0 
-          group-hover:opacity-100 transition-all
-          flex items-center justify-center
-        "
+      {/* Overlay */}
+      <motion.div
+        className="absolute inset-0 bg-transparent bg-opacity-40 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity"
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
       >
-        <button
-          onClick={onSelect}
-          className="px-4 py-2 bg-green-600 text-white text-xs font-medium rounded-lg flex items-center gap-1 hover:bg-green-700"
-        >
-          Explore Details <ChevronRight size={14} />
+        <h3 className="text-white text-lg font-bold mb-2 text-center px-2">{service.title}</h3>
+        <button className="bg-green-700 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition-all">
+          View Details
         </button>
-      </div>
+      </motion.div>
 
-      {/* Content */}
-      <div className="mt-4 text-center">
-
-        {/* Icon */}
-        <div className=" mt-5 w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-md mx-auto border-4 border-white -mt-8">
-          <Icon size={18} className="text-white" />
-        </div>
-
-        <h3 className="mt-3 text-sm font-semibold text-gray-900">
-          {service.title}
-        </h3>
-
-        <p className="text-gray-600 text-xs mt-1 line-clamp-2">
-          {service.description}
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-1 mt-2">
-          {service.tags.slice(0, 3).map((tag) => (
+      {/* Tags */}
+      <div className="p-4 bg-white">
+        <p className="text-gray-700 text-sm mb-2">{service.category}</p>
+        <div className="flex flex-wrap gap-2">
+          {service.tags.map((tag, i) => (
             <span
-              key={tag}
-              className="text-[10px] bg-green-50 text-green-700 px-2 py-[2px] rounded-full border border-green-200"
+              key={i}
+              className="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs"
             >
               {tag}
             </span>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
