@@ -3,95 +3,73 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-28 pb-20 px-6 bg-gradient-to-br from-green-50 via-white to-emerald-50">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <section
+      id="home"
+      className="relative w-full h-screen bg-gradient-to-b from-white to-green-50 overflow-hidden"
+    >
+      {/* ------------------ FULL WIDTH IMAGE ------------------ */}
+      <motion.img
+        src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443805/WhatsApp_Image_2025-11-17_at_11.35.50_e23110d6_sjqsqy.jpg"
+        className="w-full h-full object-cover object-center"
+        initial={{ scale: 1.1, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.2 }}
+      />
 
-        {/* -------- LEFT TEXT AREA -------- */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
+      {/* ------------------ TEXT OVER IMAGE ------------------ */}
+      <motion.div
+        className="absolute inset-0 flex flex-col justify-center items-center text-center px-6"
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="space-y-6"
+          transition={{ duration: 1.2 }}
+          className="text-4xl md:text-6xl font-extrabold text-lime-800 drop-shadow-xl"
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-green-800 leading-snug">
-            Luxury Interiors<br/> 
-            Built With Premium Craftsmanship
-          </h1>
+          Luxury Interiors Crafted<br /> for Inspired Living
+        </motion.h1>
 
-          <p className="text-gray-700 text-lg leading-relaxed">
-            We design functional, luxurious and timeless spaces with premium 
-            craftsmanship and personalized creative concepts. Transform your house 
-            into a masterpiece.
-          </p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="text-white text-lg md:text-xl mt-4 drop-shadow-lg max-w-2xl"
+        >
+          Transform your spaces with premium, modern and timeless interior designs
+          built with world-class craftsmanship.
+        </motion.p>
 
-          <div className="flex gap-4 flex-wrap">
-            <a href="#contact">
-              <button className="
-                bg-green-700 text-white px-8 py-3 rounded-xl font-medium shadow-lg 
-                hover:bg-green-600 hover:shadow-2xl hover:scale-[1.04] transition-all flex items-center gap-2
-              ">
-                Contact
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </a>
-          </div>
-
-          {/* Rating */}
-          <div className="flex items-center gap-3 pt-2">
-            <Star className="text-yellow-500" />
-            <p className="text-gray-700 font-semibold">Rated 4.9 / 5 by Homeowners</p>
-          </div>
-        </motion.div>
-
-        {/* -------- RIGHT IMAGE LAYOUT (NEW) -------- */}
+        {/* Buttons */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-          className="relative w-full flex justify-center"
+          className="flex gap-4 mt-8 justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.3 }}
         >
-          {/* Main big image */}
-          <motion.img
-                    
-             src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443805/WhatsApp_Image_2025-11-17_at_11.35.50_e23110d6_sjqsqy.jpg"
-            className="rounded-3xl shadow-2xl w-[310px] h-[380px] object-cover"
-            initial={{ x: 40, y: 10, opacity: 0 }}
-            animate={{ x: 0, y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-          />
+          <a href="#contact">
+            <button className="bg-green-700 text-white px-8 py-3 rounded-2xl font-semibold shadow-xl hover:bg-green-600 hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+              Contact
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </a>
 
-          {/* Top right small image */}
-          <motion.img
-           src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443758/WhatsApp_Image_2025-11-17_at_13.13.48_9058fef1_kywzfg.jpg"
-            className="rounded-2xl shadow-xl w-[180px] h-[130px] object-cover absolute -top-6 right-0 border-4 border-white"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.2 }}
-          />
-
-          {/* Bottom left small image */}
-          <motion.img
-  
-              src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763443795/WhatsApp_Image_2025-11-17_at_13.13.43_aa83fc2d_pyatxm.jpg"
-            className="rounded-2xl shadow-xl w-[170px] h-[130px] object-cover absolute bottom-0 -left-8 border-4 border-white"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
-          />
-
-          {/* Floating tag */}
-          <motion.div
-            className="absolute -bottom-10 right-4 bg-white rounded-xl shadow-xl px-5 py-4 border border-green-100"
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.35 }}
-          >
-            <p className="text-gray-900 font-bold text-xl">250+ Projects</p>
-            <p className="text-gray-500 text-sm">Delivered Across Telangana</p>
-          </motion.div>
+          <a href="#services">
+  <button className="px-8 py-3 rounded-2xl font-semibold backdrop-blur-md border border-white/50 bg-white/30 hover:bg-white/60 text-white transition-all">
+    Our Works
+  </button>
+</a>
 
         </motion.div>
-      </div>
+
+        {/* Rating */}
+        <div className="flex items-center gap-2 mt-6 justify-center">
+          <Star className="text-yellow-500 w-6 h-6" />
+          <p className="text-white font-semibold text-lg drop-shadow">4.9/5 Rating</p>
+        </div>
+      </motion.div>
     </section>
   );
 }

@@ -15,52 +15,58 @@ export default function Services() {
 
   return (
     <section id="services" className="py-20 px-6 bg-gradient-to-b from-green-50 via-white to-green-50">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-green-900">
-            What We Offer
+          <h2 className="text-4xl md:text-5xl font-extrabold text-green-900 tracking-tight">
+            Our Premium Services
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mt-3">
-            Premium interior design services tailored to transform your space with innovation,
-            comfort and elegant craftsmanship.
+            Transforming spaces with luxury, precision and creativity.
           </p>
         </div>
 
-        {/* Category Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center mb-10">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all ${
-                selectedCategory === category
-                  ? "bg-green-700 text-white shadow-lg scale-105"
-                  : "bg-white border border-green-200 text-green-700 hover:bg-green-100"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
+          {categories.map((cat) => {
+            const Icon = cat.icon;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.name)}
+                className={`flex items-center gap-12 px-5 py-2.5  font-semibold text-sm transition-all duration-300
+                  ${
+                    selectedCategory === cat.name
+                      ? "bg-green-700 text-white shadow-xl scale-105"
+                      : "bg-white text-green-700 border border-green-200 hover:bg-green-100"
+                  }
+                `}
+              >
+                <Icon size={18} />
+                {cat.name}
+              </button>
+            );
+          })}
         </div>
 
-        {/* Count label */}
-        <p className="text-center text-gray-600 text-sm mb-8">
-          Showing <span className="font-semibold text-green-900">{filteredServices.length}</span>{" "}
+        {/* Count */}
+        <p className="text-center text-gray-600 text-sm mb-10">
+          Showing{" "}
+          <span className="text-green-900 font-semibold">
+            {filteredServices.length}
+          </span>{" "}
           {filteredServices.length === 1 ? "service" : "services"}
         </p>
 
-        {/* Card Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {filteredServices.map((service) => (
-            <div key={service.id}>
-              <ServiceCard
-                service={service}
-                viewMode="grid"
-                onSelect={() => setSelectedService(service)}
-              />
-            </div>
+            <ServiceCard
+              key={service.id}
+              service={service}
+              onSelect={() => setSelectedService(service)}
+            />
           ))}
         </div>
 
